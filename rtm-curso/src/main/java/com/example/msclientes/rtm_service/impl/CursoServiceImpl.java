@@ -25,14 +25,14 @@ public class CursoServiceImpl implements CursoService {
     }
 
     @Override
-    public Curso guardar(Curso categoria) {
-        return cursoRepository.save(categoria);
+    public Curso guardar(Curso curso) {
+        return cursoRepository.save(curso);
     }
 
     @Override
-    public Curso actualizar(Integer id, Curso categoria) {
-        categoria.setId(id);
-        return cursoRepository.save(categoria);
+    public Curso actualizar(Integer id, Curso curso) {
+        curso.setId(id);
+        return cursoRepository.save(curso);
     }
 
     @Override
