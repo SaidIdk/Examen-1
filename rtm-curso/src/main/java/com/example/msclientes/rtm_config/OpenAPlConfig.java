@@ -1,4 +1,4 @@
-package com.example.ms_estudiante.rtm_config;
+package com.example.msclientes.rtm_config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
@@ -7,14 +7,14 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class OpenAPIConfig {
+public class OpenAPlConfig {
 
     @Bean
     public OpenAPI customOpenAPI() {
         return new OpenAPI().info(new Info()
-                .title("OPEN API MICROSERVICIO ESTUDIANTE")
+                .title("OPEN API MICROSERVICIO CURSOS")
                 .version("0.0.1")
-                .description("Servicios web para la gestión del estudiante")
+                .description("Servicios web para la gestión del cursos")
                 .termsOfService("http://swagger.io/terms")
                 .license(new License().name("Apache 2.0").url("http://springdoc.org"))
         );

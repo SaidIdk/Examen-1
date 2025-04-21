@@ -20,53 +20,54 @@ public class EstudianteSeeder implements CommandLineRunner {
 //        categoriaRepository.deleteAll();
 
         if (estudianteRepository.count() == 0) { // Verifica si la tabla está vacía
-            // Crear objetos de categorías
-            Estudiante cat1 = new Estudiante(null, "Electrónica");
-            Estudiante cat2 = new Estudiante(null, "Automotriz");
-            Estudiante cat3 = new Estudiante(null, "Ropa");
-            Estudiante cat4 = new Estudiante(null, "Hogar");
-            Estudiante cat5 = new Estudiante(null, "Juguetes");
-            Estudiante cat6 = new Estudiante(null, "Libros");
-            Estudiante cat7 = new Estudiante(null, "Deportes");
-            Estudiante cat8 = new Estudiante(null, "Salud");
-            Estudiante cat9 = new Estudiante(null, "Belleza");
-            Estudiante cat10 = new Estudiante(null, "Mascotas");
-            Estudiante cat11 = new Estudiante(null, "Computadoras");
-            Estudiante cat12 = new Estudiante(null, "Celulares");
-            Estudiante cat13 = new Estudiante(null, "Física");
-            Estudiante cat14 = new Estudiante(null, "Jardín");
-            Estudiante cat15 = new Estudiante(null, "Bebidas");
-            Estudiante cat16 = new Estudiante(null, "Joyería");
-            Estudiante cat17 = new Estudiante(null, "Videojuegos");
-            Estudiante cat18 = new Estudiante(null, "Papelería");
-            Estudiante cat19 = new Estudiante(null, "Cine y TV");
-            Estudiante cat20 = new Estudiante(null, "Cuidado Personal");
+            // Crear objetos de estudiantes
+            Estudiante est1 = new Estudiante(null, "Juan Pérez");
+            Estudiante est2 = new Estudiante(null, "María García");
+            Estudiante est3 = new Estudiante(null, "Luis Fernández");
+            Estudiante est4 = new Estudiante(null, "Ana Rodríguez");
+            Estudiante est5 = new Estudiante(null, "Carlos Ramírez");
+            Estudiante est6 = new Estudiante(null, "Lucía Sánchez");
+            Estudiante est7 = new Estudiante(null, "Miguel Torres");
+            Estudiante est8 = new Estudiante(null, "Sofía Herrera");
+            Estudiante est9 = new Estudiante(null, "Diego Castro");
+            Estudiante est10 = new Estudiante(null, "Valentina Morales");
+            Estudiante est11 = new Estudiante(null, "Andrés Rojas");
+            Estudiante est12 = new Estudiante(null, "Camila Delgado");
+            Estudiante est13 = new Estudiante(null, "Sebastián Cruz");
+            Estudiante est14 = new Estudiante(null, "Paula Medina");
+            Estudiante est15 = new Estudiante(null, "Gabriel Reyes");
+            Estudiante est16 = new Estudiante(null, "Daniela Paredes");
+            Estudiante est17 = new Estudiante(null, "Tomás Aguirre");
+            Estudiante est18 = new Estudiante(null, "Isabela Flores");
+            Estudiante est19 = new Estudiante(null, "Javier Romero");
+            Estudiante est20 = new Estudiante(null, "Renata Campos");
+
 
             // Guardar en la base de datos
-            estudianteRepository.save(cat1);
-            estudianteRepository.save(cat2);
-            estudianteRepository.save(cat3);
-            estudianteRepository.save(cat4);
-            estudianteRepository.save(cat5);
-            estudianteRepository.save(cat6);
-            estudianteRepository.save(cat7);
-            estudianteRepository.save(cat8);
-            estudianteRepository.save(cat9);
-            estudianteRepository.save(cat10);
-            estudianteRepository.save(cat11);
-            estudianteRepository.save(cat12);
-            estudianteRepository.save(cat13);
-            estudianteRepository.save(cat14);
-            estudianteRepository.save(cat15);
-            estudianteRepository.save(cat16);
-            estudianteRepository.save(cat17);
-            estudianteRepository.save(cat18);
-            estudianteRepository.save(cat19);
-            estudianteRepository.save(cat20);
+            estudianteRepository.save(est1);
+            estudianteRepository.save(est2);
+            estudianteRepository.save(est3);
+            estudianteRepository.save(est4);
+            estudianteRepository.save(est5);
+            estudianteRepository.save(est6);
+            estudianteRepository.save(est7);
+            estudianteRepository.save(est8);
+            estudianteRepository.save(est9);
+            estudianteRepository.save(est10);
+            estudianteRepository.save(est11);
+            estudianteRepository.save(est12);
+            estudianteRepository.save(est13);
+            estudianteRepository.save(est14);
+            estudianteRepository.save(est15);
+            estudianteRepository.save(est16);
+            estudianteRepository.save(est17);
+            estudianteRepository.save(est18);
+            estudianteRepository.save(est19);
+            estudianteRepository.save(est20);
 
-            System.out.println("✅ Datos de categorías insertadas correctamente.");
+            System.out.println("✅ Datos de estudiantes insertadas correctamente.");
         }  else {
-            System.out.println("Las categoria ya existen, no se insertaron datos.");
+            System.out.println("Los estudiantes ya existen, no se insertaron datos.");
         }
 
     }

@@ -18,10 +18,10 @@ spring:
           enabled: true
           lower-case-service-id: true
       routes:
-        - id: ms-catalogo-service
-          uri: lb://ms-catalogo-service
+        - id: ms-estudiante-service
+          uri: lb://ms-estudiante-service
           predicates:
-            - Path=/categoria/**
+            - Path=/estudiante/**
 
         - id: s-pedido-service
           uri: lb://ms-pedido-service
