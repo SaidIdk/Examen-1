@@ -1,0 +1,40 @@
+server:
+  port: 8085
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8090/eureka
+      #defaultZone: ${EUREKA_URI:http://localhost:8090/eureka}
+  instance:
+    hostname: localhost
+    #instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: ms-catalogo-service
+          uri: lb://ms-catalogo-service
+          predicates:
+            - Path=/categoria/**
+
+        - id: s-pedido-service
+          uri: lb://ms-pedido-service
+          predicates:
+            - Path=/pedido/**
+
+        - id: ms-pagos-service
+          uri: lb://ms-pagos-service
+          predicates:
+            - Path=/pagos/**
+
+        - id: ms-clientes-service
+          uri: lb://ms-clientes-service
+          predicates:
+            - Path=/cliente/**
+
