@@ -1,4 +1,4 @@
-package com.example.msclientes.rtm_entity;
+package com.example.mscurso.rtm_entity;
 
 
 import jakarta.persistence.*;

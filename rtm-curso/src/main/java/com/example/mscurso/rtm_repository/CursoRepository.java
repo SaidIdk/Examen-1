@@ -1,6 +1,6 @@
-package com.example.msclientes.rtm_repository;
+package com.example.mscurso.rtm_repository;
 
-import com.example.msclientes.rtm_entity.Curso;
+import com.example.mscurso.rtm_entity.Curso;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

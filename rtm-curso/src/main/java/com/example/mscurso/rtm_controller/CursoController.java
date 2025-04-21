@@ -1,7 +1,7 @@
-package com.example.msclientes.rtm_controller;
+package com.example.mscurso.rtm_controller;
 
-import com.example.msclientes.rtm_entity.Curso;
-import com.example.msclientes.rtm_service.CursoService;
+import com.example.mscurso.rtm_entity.Curso;
+import com.example.mscurso.rtm_service.CursoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

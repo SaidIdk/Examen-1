@@ -1,4 +1,4 @@
-package com.example.msclientes.rtm_config;
+package com.example.mscurso.rtm_config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;

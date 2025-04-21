@@ -1,4 +1,4 @@
-package com.example.msclientes;
+package com.example.mscurso;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

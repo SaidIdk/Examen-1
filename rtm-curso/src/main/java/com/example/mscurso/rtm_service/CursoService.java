@@ -1,7 +1,7 @@
-package com.example.msclientes.rtm_service;
+package com.example.mscurso.rtm_service;
 
 
-import com.example.msclientes.rtm_entity.Curso;
+import com.example.mscurso.rtm_entity.Curso;
 
 import java.util.List;
 import java.util.Optional;

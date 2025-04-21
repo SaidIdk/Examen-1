@@ -1,4 +1,4 @@
-package com.example.msclientes;
+package com.example.mscurso;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

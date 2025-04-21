@@ -1,9 +1,9 @@
-package com.example.msclientes.rtm_service.impl;
+package com.example.mscurso.rtm_service.impl;
 
 
-import com.example.msclientes.rtm_entity.Curso;
-import com.example.msclientes.rtm_repository.CursoRepository;
-import com.example.msclientes.rtm_service.CursoService;
+import com.example.mscurso.rtm_entity.Curso;
+import com.example.mscurso.rtm_repository.CursoRepository;
+import com.example.mscurso.rtm_service.CursoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
